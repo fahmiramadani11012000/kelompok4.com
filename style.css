@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(asset/cursor.png), auto;
+    font-family: 'Titilium Web', sans-serif;
+}
+
+.layouts {
+    max-width: 476px;
+    margin: 0 auto;
+    height: 100vh;
+    border: 0.5px solid rgb(27, 27, 27);
+    position: relative;
+}
+
+.navbar {
+    background-color: #579fff;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    border-bottom: 1px solid rgb(43, 42, 42);
+}
+
+.navbar h3 {
+    color: white;
+    font-weight: 900;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #1f1f1f;
+}
+
+.item-image {
+    width: 50%;
+}
+
+.item-submit,
+.led-submit {
+    background-color: #579fff;
+    padding: 4px 8px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    border-radius: .1rem;
+    transition: all .2s ease-in-out;
+}
+
+.page-title {
+    padding: 2rem;
+}
+
+.page-title h3 {
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.leds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.led {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.led-location-text {
+    font-weight: 700;
+}
+
+.led-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #579fff;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.bottombar ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    padding: 8px;
+}
+
+.bottombar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.bottombar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    display: block;
+}
+
+.bottombar ul li a:hover {
+    scale: 110%;
+    transition: all 0.3s ease-in-out;
+}
